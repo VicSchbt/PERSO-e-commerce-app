@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import ProductsList from '$components/product/ProductsList.svelte';
+
+	export let data;
+
+	$: console.log(data.products);
+</script>
+
+<ProductsList products={data.products} />

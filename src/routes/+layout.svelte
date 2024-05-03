@@ -5,7 +5,8 @@
 	export let data;
 
 	$: categories = data.categories;
-	$: console.log(data);
 </script>
 
 <Header {categories} />
+
+<slot />
