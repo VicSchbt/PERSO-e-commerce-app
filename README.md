@@ -1,3 +1,9 @@
+# Resources
+
+## Design
+
+Inspiration from [this design](https://dribbble.com/shots/20972968-E-commerce-Web-design) from Dribbble.
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
