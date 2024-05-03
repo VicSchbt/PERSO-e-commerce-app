@@ -2,14 +2,17 @@
 	import ProductsList from '$components/product/ProductsList.svelte';
 
 	export let data;
+
+	$: ({ category, products } = data);
 </script>
 
-<main class="home">
-	<ProductsList products={data.products} />
+<main class="category">
+	<h1 class="category__title">{category}</h1>
+	<ProductsList {products} />
 </main>
 
 <style lang="scss">
-	.home {
+	.category {
 		padding: 2rem;
 	}
 </style>

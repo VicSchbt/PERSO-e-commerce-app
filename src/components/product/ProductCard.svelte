@@ -3,7 +3,7 @@
 
 	export let product: Product;
 
-	const { title, price, category, image } = product;
+	$: ({ title, price, category, image } = product);
 </script>
 
 <li class="product-card">
